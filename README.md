@@ -60,9 +60,6 @@ $ docker run --rm -p 8899:8899 --env-file ./local.env --name task-clean-arch tas
 | ------ | ------ | ------------- |
 | GET    | /tasks | get task list |
 
-
-#### Response
-
 ##### Success
 
 | Name    | type    | Description     |
@@ -80,8 +77,6 @@ $ docker run --rm -p 8899:8899 --env-file ./local.env --name task-clean-arch tas
 | Name | type   | Description |
 | ---- | ------ | ----------- |
 | name | String | task name   |
-
-#### Response
 
 ##### Success
 
@@ -104,8 +99,6 @@ $ docker run --rm -p 8899:8899 --env-file ./local.env --name task-clean-arch tas
 | name   | String | task name   |
 | status | Int    | task status |
 
-#### Response
-
 ##### Success
 
 | Name    | type    | Description     |
@@ -117,9 +110,6 @@ $ docker run --rm -p 8899:8899 --env-file ./local.env --name task-clean-arch tas
 | Method | Url    | Description |
 | ------ | ------ | ----------- |
 | DELETE   | /tasks/:id | delete task |
-
-#### Response
-
 ##### Success
 
 | Name    | type    | Description     |

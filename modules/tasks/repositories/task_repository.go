@@ -95,7 +95,6 @@ func (r *TaskRepo) UpdateTaskById(req *entities.UpdateTaskListReq) (*entities.Up
 }
 
 func (r *TaskRepo) DeleteTaskById(req *entities.DeleteTaskListReq) error {
-	fmt.Printf("%#v\n", req)
 	statement := `DELETE FROM tasks WHERE id = $1;`
 	_, err := r.Db.Exec(statement, req.ID)
 	if err != nil {
